@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>TEAM AWARDS | KEIO HIGH WATER POLO</title>
+    <title>HISTORY & AWARDS | KEIO HIGH WATER POLO</title>
     <style>
         /* 全体のスタイル */
         body {
@@ -44,17 +44,48 @@
             text-align: center;
             margin-bottom: 0.5rem;
             letter-spacing: 1px;
+            border-bottom: 2px solid #2a3c5c;
+            padding-bottom: 0.5rem;
+            display: inline-block;
+        }
+        .section-header-wrap {
+            text-align: center;
+            margin-bottom: 2.5rem;
         }
         .section-desc {
-            text-align: center;
             color: #a9b5c9;
-            margin-bottom: 2.5rem;
             font-size: 0.95rem;
+            margin-top: 0.5rem;
         }
+        
+        /* 圧倒的ヒストリーセクション */
+        .history-grid {
+            display: grid;
+            gap: 1.5rem;
+            margin-bottom: 3rem;
+        }
+        .history-item {
+            background-color: #051024;
+            padding: 1.5rem;
+            border-radius: 8px;
+            border-left: 4px solid #c8102e;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+        }
+        .history-item h3 {
+            color: #ffd700;
+            margin: 0 0 0.5rem 0;
+            font-size: 1.2rem;
+        }
+        .history-item p {
+            margin: 0;
+            font-size: 0.95rem;
+            color: #e0e0e0;
+        }
+
         /* ターゲットバナー */
         .target-banner {
             text-align: center;
-            margin-bottom: 3rem;
+            margin: 3rem 0;
             background: rgba(200, 16, 46, 0.1);
             padding: 2rem 1.5rem;
             border-radius: 8px;
@@ -74,6 +105,7 @@
             margin: 0;
             line-height: 1.5;
         }
+
         /* アワードカード */
         .award-card {
             background-color: #1a2c4c;
@@ -82,6 +114,9 @@
             margin-bottom: 2rem;
             border-left: 5px solid #c8102e;
             box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+        }
+        .award-card.crown {
+            border-left-color: #ffd700;
         }
         .award-header {
             display: flex;
@@ -102,6 +137,9 @@
             color: #c8102e;
             font-weight: bold;
         }
+        .award-card.crown .award-title-group span {
+            color: #ffd700;
+        }
         .award-desc {
             font-size: 0.95rem;
             color: #a9b5c9;
@@ -109,6 +147,7 @@
             padding-bottom: 1.5rem;
             border-bottom: 1px solid #2a3c5c;
         }
+        
         /* 受賞者リスト */
         .winner-list {
             list-style: none;
@@ -139,16 +178,7 @@
             color: #a9b5c9;
             line-height: 1.4;
         }
-        .tbd-item {
-            background: rgba(5, 16, 36, 0.5);
-            border: 1px dashed #2a3c5c;
-            color: #556a8d;
-            text-align: center;
-            padding: 1rem;
-            border-radius: 6px;
-            font-size: 0.9rem;
-            font-weight: bold;
-        }
+
         /* 戻るボタン */
         .back-nav {
             text-align: center;
@@ -175,14 +205,59 @@
 <body>
 
     <header>
-        <h1>TEAM AWARDS & HISTORY</h1>
-        <p class="subtitle">超えるべき壁と、私たちが称賛する価値観</p>
+        <h1>HISTORY & AWARDS</h1>
+        <p class="subtitle">受け継がれる知性と、私たちが称賛する価値観</p>
     </header>
 
     <section>
+        <div class="section-header-wrap">
+            <h2>OUR LEGACY</h2>
+            <p class="section-desc">「日本水球は塾から始まった。」<br>1世紀を超える圧倒的な実績と、社会を牽引する人材の系譜。</p>
+        </div>
+
+        <div class="history-grid">
+            <div class="history-item">
+                <h3>👑 黄金期の絶対的支配（戦前・日本選手権5連覇）</h3>
+                <p>1915年創部。他大学に先駆けて水球を体系化し、個人の身体能力に依存しない独自の戦術「フローティングシステム」を完成。1937年から1941年にかけて日本選手権で前人未到の5連覇、さらには12戦全勝の完全無敗記録を樹立し、国内に敵なしの黄金期を現出させた。</p>
+            </div>
+            <div class="history-item">
+                <h3>🧠 知略による古豪復活（インカレ連覇）</h3>
+                <p>戦後、体育専門大学が覇権を握り始めた時代において、私立総合大学の意地と「知性に基づく戦術的洗練」を徹底。1972年・1973年にインカレ連覇を達成し、スポーツ科学と組織力で再び日本の頂点を極めた。</p>
+            </div>
+            <div class="history-item">
+                <h3>🌍 日本代表と、世界を変える実業家の輩出</h3>
+                <p>ローマ五輪、東京五輪をはじめとする多数の日本代表（オリンピアン）を輩出。さらにその活躍はプール内に留まらず、「水中の格闘技」で培った極限のインテリジェンスと人間力は、キッザニア（KidZania）創業者の住谷栄之資氏に代表されるような、社会に革新をもたらす強力なリーダーシップへと結実している。</p>
+            </div>
+        </div>
+
         <div class="target-banner">
-            <span class="target-title">🎯 TARGET: 19XX年 インターハイ出場</span>
-            <p class="target-text">〇〇年間超えられていない、私たちの大きな目標。<br>この壁を共に打ち破り、新たな歴史を創る行動を私たちは称賛します。</p>
+            <span class="target-title">🎯 TARGET：インターハイ出場</span>
+            <p class="target-text"> 数十年間超えられていない、私たちの大きな目標。<br>圧倒的な歴史に敬意を払い、自らの手でそれを塗り替える行動を私たちは称賛します。</p>
+        </div>
+
+        <div class="section-header-wrap">
+            <h2>TEAM AWARDS</h2>
+            <p class="section-desc">目標達成のため、私たちがチーム全体で称賛する3つの価値観</p>
+        </div>
+
+        <div class="award-card crown">
+            <div class="award-header">
+                <div class="award-icon">👑</div>
+                <div class="award-title-group">
+                    <span>LIFETIME ACHIEVEMENT AWARD</span>
+                    <h3>折笠礎功労賞</h3>
+                </div>
+            </div>
+            <p class="award-desc">
+                自身の卒業後も部がより良いものになっていく、未来に向けた具体的な取り組みや仕組みづくりを遂行した者へ贈られる最高の栄誉。
+            </p>
+            <ul class="winner-list">
+                <li class="winner-item">
+                    <span class="winner-year">2026</span>
+                    <span class="winner-name">麓 亜蓮</span>
+                    <span class="winner-reason">実践的且つ短時間で高密度の練習内容を提案・実施し、チームのトレーニング基盤を大きくアップデートさせた。</span>
+                </li>
+            </ul>
         </div>
 
         <div class="award-card">
@@ -194,10 +269,14 @@
                 </div>
             </div>
             <p class="award-desc">
-                チームの勝利と成長のために最も献身的に貢献し、周囲にポジティブな影響を与えた「最大の利他主義者」を称える賞。
+                どんな小さなことでも周囲に良い影響を与えたことを、生徒間・チーム間で認め合う文化を体現した者を称える賞。
             </p>
             <ul class="winner-list">
-                <li class="tbd-item">2026年度 受賞者選考中...</li>
+                <li class="winner-item">
+                    <span class="winner-year">2026</span>
+                    <span class="winner-name">畑 冴空</span>
+                    <span class="winner-reason">日々の活動の中で、チームのために最も献身的に貢献し、周囲へポジティブな影響を与え続けた。</span>
+                </li>
             </ul>
         </div>
 
@@ -210,31 +289,14 @@
                 </div>
             </div>
             <p class="award-desc">
-                現状に満足せず、失敗を恐れずに自らの限界を超えようとする「新たな挑戦（ブレイクスルー）」に踏み出した姿勢を評価する賞。
-            </p>
-            <ul class="winner-list">
-                <li class="tbd-item">2026年度 受賞者選考中...</li>
-            </ul>
-        </div>
-
-        <div class="award-card" style="border-left-color: #ffd700;">
-            <div class="award-header">
-                <div class="award-icon">👑</div>
-                <div class="award-title-group">
-                    <span style="color: #ffd700;">LIFETIME ACHIEVEMENT AWARD</span>
-                    <h3>折笠礎功労賞</h3>
-                </div>
-            </div>
-            <p class="award-desc">
-                自身の卒業後も部がより良いものになっていく、未来に向けた具体的な取り組みや仕組みづくりを遂行した者へ贈られる最高の栄誉。
+                失敗にこそ価値がある。成功したかどうかは問わず、現状に満足せずに自らの限界を超えようとする新たな挑戦に踏み出した姿勢を評価する賞。
             </p>
             <ul class="winner-list">
                 <li class="winner-item">
                     <span class="winner-year">2026</span>
-                    <span class="winner-name">麓 アレン</span>
-                    <span class="winner-reason">実践的且つ短時間で高密度の練習内容を提案・実施し、チームのトレーニング基盤を大きくアップデートさせた。</span>
+                    <span class="winner-name">横岡 千章</span>
+                    <span class="winner-reason">失敗を恐れず、チームに新たなブレイクスルーをもたらすための果敢なチャレンジを実行した。</span>
                 </li>
-                <li class="tbd-item">2027年度 該当者選考中...</li>
             </ul>
         </div>
     </section>
