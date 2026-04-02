@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TEAM AWARDS | KEIO HIGH WATER POLO</title>
+    <style>
+        /* 全体のスタイル */
+        body {
+            font-family: 'Helvetica Neue', Arial, 'Hiragino Kaku Gothic ProN', 'Meiryo', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #0b1d3a;
+            color: #ffffff;
+            line-height: 1.6;
+        }
+        /* ヘッダー */
+        header {
+            text-align: center;
+            padding: 4rem 1rem 2rem;
+            border-bottom: 3px solid #c8102e;
+            background: linear-gradient(180deg, #1a2c4c 0%, #0b1d3a 100%);
+        }
+        header h1 {
+            font-size: 2.2rem;
+            margin: 0 0 0.5rem 0;
+            letter-spacing: 2px;
+            color: #ffffff;
+        }
+        .subtitle {
+            font-size: 1rem;
+            color: #a9b5c9;
+            margin-bottom: 0;
+            font-weight: bold;
+        }
+        /* セクション共通 */
+        section {
+            padding: 3rem 1.5rem;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+        h2 {
+            font-size: 1.6rem;
+            text-align: center;
+            margin-bottom: 0.5rem;
+            letter-spacing: 1px;
+        }
+        .section-desc {
+            text-align: center;
+            color: #a9b5c9;
+            margin-bottom: 2.5rem;
+            font-size: 0.95rem;
+        }
+        /* ターゲットバナー */
+        .target-banner {
+            text-align: center;
+            margin-bottom: 3rem;
+            background: rgba(200, 16, 46, 0.1);
+            padding: 2rem 1.5rem;
+            border-radius: 8px;
+            border: 1px dashed rgba(200, 16, 46, 0.5);
+            box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+        }
+        .target-title {
+            font-size: 1.4rem;
+            font-weight: bold;
+            color: #ffd700;
+            margin-bottom: 0.8rem;
+            display: block;
+        }
+        .target-text {
+            font-size: 1rem;
+            color: #ffffff;
+            margin: 0;
+            line-height: 1.5;
+        }
+        /* アワードカード */
+        .award-card {
+            background-color: #1a2c4c;
+            padding: 2rem;
+            border-radius: 8px;
+            margin-bottom: 2rem;
+            border-left: 5px solid #c8102e;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+        }
+        .award-header {
+            display: flex;
+            align-items: center;
+            margin-bottom: 1rem;
+            gap: 15px;
+        }
+        .award-icon {
+            font-size: 2.5rem;
+        }
+        .award-title-group h3 {
+            margin: 0;
+            font-size: 1.4rem;
+            color: #ffffff;
+        }
+        .award-title-group span {
+            font-size: 0.85rem;
+            color: #c8102e;
+            font-weight: bold;
+        }
+        .award-desc {
+            font-size: 0.95rem;
+            color: #a9b5c9;
+            margin-bottom: 1.5rem;
+            padding-bottom: 1.5rem;
+            border-bottom: 1px solid #2a3c5c;
+        }
+        /* 受賞者リスト */
+        .winner-list {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+        .winner-item {
+            background: #051024;
+            padding: 1rem 1.5rem;
+            border-radius: 6px;
+            margin-bottom: 0.8rem;
+        }
+        .winner-year {
+            font-size: 1.2rem;
+            color: #ffd700;
+            font-weight: bold;
+            margin-right: 10px;
+        }
+        .winner-name {
+            font-size: 1.2rem;
+            font-weight: bold;
+            color: #ffffff;
+        }
+        .winner-reason {
+            display: block;
+            margin-top: 0.5rem;
+            font-size: 0.9rem;
+            color: #a9b5c9;
+            line-height: 1.4;
+        }
+        .tbd-item {
+            background: rgba(5, 16, 36, 0.5);
+            border: 1px dashed #2a3c5c;
+            color: #556a8d;
+            text-align: center;
+            padding: 1rem;
+            border-radius: 6px;
+            font-size: 0.9rem;
+            font-weight: bold;
+        }
+        /* 戻るボタン */
+        .back-nav {
+            text-align: center;
+            padding: 2rem 1rem 4rem;
+        }
+        .back-btn {
+            display: inline-block;
+            background-color: transparent;
+            color: #a9b5c9;
+            padding: 0.8rem 2rem;
+            font-size: 1rem;
+            font-weight: bold;
+            text-decoration: none;
+            border-radius: 50px;
+            border: 2px solid #2a3c5c;
+            transition: 0.3s;
+        }
+        .back-btn:hover {
+            background-color: #2a3c5c;
+            color: #ffffff;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>TEAM AWARDS & HISTORY</h1>
+        <p class="subtitle">超えるべき壁と、私たちが称賛する価値観</p>
+    </header>
+
+    <section>
+        <div class="target-banner">
+            <span class="target-title">🎯 TARGET: 19XX年 インターハイ出場</span>
+            <p class="target-text">〇〇年間超えられていない、私たちの大きな目標。<br>この壁を共に打ち破り、新たな歴史を創る行動を私たちは称賛します。</p>
+        </div>
+
+        <div class="award-card">
+            <div class="award-header">
+                <div class="award-icon">🤝</div>
+                <div class="award-title-group">
+                    <span>BEST GIVER AWARD</span>
+                    <h3>ベストギバー賞</h3>
+                </div>
+            </div>
+            <p class="award-desc">
+                チームの勝利と成長のために最も献身的に貢献し、周囲にポジティブな影響を与えた「最大の利他主義者」を称える賞。
+            </p>
+            <ul class="winner-list">
+                <li class="tbd-item">2026年度 受賞者選考中...</li>
+            </ul>
+        </div>
+
+        <div class="award-card">
+            <div class="award-header">
+                <div class="award-icon">🔥</div>
+                <div class="award-title-group">
+                    <span>BEYOND CHALLENGE AWARD</span>
+                    <h3>ビヨンドチャレンジ賞</h3>
+                </div>
+            </div>
+            <p class="award-desc">
+                現状に満足せず、失敗を恐れずに自らの限界を超えようとする「新たな挑戦（ブレイクスルー）」に踏み出した姿勢を評価する賞。
+            </p>
+            <ul class="winner-list">
+                <li class="tbd-item">2026年度 受賞者選考中...</li>
+            </ul>
+        </div>
+
+        <div class="award-card" style="border-left-color: #ffd700;">
+            <div class="award-header">
+                <div class="award-icon">👑</div>
+                <div class="award-title-group">
+                    <span style="color: #ffd700;">LIFETIME ACHIEVEMENT AWARD</span>
+                    <h3>折笠礎功労賞</h3>
+                </div>
+            </div>
+            <p class="award-desc">
+                自身の卒業後も部がより良いものになっていく、未来に向けた具体的な取り組みや仕組みづくりを遂行した者へ贈られる最高の栄誉。
+            </p>
+            <ul class="winner-list">
+                <li class="winner-item">
+                    <span class="winner-year">2026</span>
+                    <span class="winner-name">麓 アレン</span>
+                    <span class="winner-reason">実践的且つ短時間で高密度の練習内容を提案・実施し、チームのトレーニング基盤を大きくアップデートさせた。</span>
+                </li>
+                <li class="tbd-item">2027年度 該当者選考中...</li>
+            </ul>
+        </div>
+    </section>
+
+    <div class="back-nav">
+        <a href="index.html" class="back-btn">◀ 新歓トップページへ戻る</a>
+    </div>
+
+</body>
+</html>
